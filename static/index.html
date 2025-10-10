@@ -1,30 +1,52 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Login - Filosofo Python</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="conteudo">
-        <h1>Login</h1>
-        <form action="http://127.0.0.1:5000/add" method="post">
-            <input type="email" name="email" placeholder="Digite seu email">
-            <br>
-            <input type="password" name="password" placeholder="Digite a senha">
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
+    <div class="container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo-container">
+                    <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python Logo" class="python-logo">
+                </div>
+                <h1>Login na tela do Filosofo Python</h1>
+                <p>Entre com suas credenciais</p>
+            </div>
+            
+            <form action="http://127.0.0.1:5000/add" method="post">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                
+                <button type="submit" class="btn-login">Entrar</button>
+                
+                <div class="signup-link">
+                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
     </div>
+    
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/ranierinmoreira">Ránieri do Nascimento Moreira</a></p>
+    </footer>
 </body>
 </html>
-
-
-<footer>
-    <p>Desenvolvido por <a href="https://github.com/ranierinmoreira">Ránieri do Nascimento Moreira</a></p>
-</footer>
